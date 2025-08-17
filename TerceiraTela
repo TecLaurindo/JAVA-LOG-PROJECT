@@ -1,0 +1,17 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class TerceiraTela extends JFrame {
+    public TerceiraTela (String user) {
+        setTitle("Trabalhos Realizados");
+        setSize(800, 600);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JLabel mensagem = new JLabel("Bem-vindo, " + user + "!", SwingConstants.CENTER);
+        mensagem.setFont(new Font("Arial", Font.BOLD, 16));
+
+        add(mensagem);
+        setVisible(true);
+    }
+}
